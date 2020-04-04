@@ -9,6 +9,19 @@ public class TestFile {
 			System.out.println("Yippee!");
 		}
 		printNums();
+
+		while(true) {
+			i++;
+			System.out.println("I is: " + i);
+			if(i > 10) {
+				break;
+			}
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e){
+				e.printStackTrace();
+			}
+		}
 	}
 
 	private static void printNums() {
